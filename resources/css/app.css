@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+ 
+@layer components {
+    .wrapper {
+        @apply  flex justify-center;
+    }
+    .container{
+        @apply max-w-[1440px] my-[40px] md:my-[64px] lg:my-[80px] px-[32px]  md:px-[40px] lg:px-[62px];
+    }
+
+    .h1{
+        @apply font-inter font-bold text-[56px] leading-[62px];
+    }
+
+    .h2{
+        @apply font-inter font-bold text-[48px] leading-[53px];
+    }
+
+    .h3{
+        @apply font-inter font-bold text-[40px] leading-[44px];
+    }
+
+    .h4{
+        @apply font-inter font-bold text-[32px] leading-[35px];
+    }
+
+    .h5{
+        @apply font-inter font-bold text-[24px] leading-[26px];
+    }
+
+    .h6{
+        @apply font-inter font-semibold text-[20px] leading-[22px];
+    }
+
+    .font-2xl{
+        @apply font-inter text-[30px] leading-[36px]
+    }
+
+    .font-xl{
+        @apply font-inter text-[25px] leading-[30px]
+    }
+
+    .font-lg{
+        @apply font-inter text-[20px] leading-[28px]
+    }
+    .font-md{
+        @apply font-inter text-[18px] leading-[25px]
+    }
+    .font-default{
+        @apply font-inter text-[16px] leading-[22px]
+    }
+    .font-sm{
+        @apply font-inter text-[14px] leading-[20px]
+    }
+
+    .font-xl-responsive{
+        @apply font-sm md:font-md lg:font-lg xl:font-xl
+    }
+    .font-lg-responsive{
+        @apply font-sm md:font-md lg:font-lg 
+    }
+    .font-md-responsive{
+        @apply  font-sm lg:font-md 
+    }
+
+
+    .font-2xl-responsive{
+        @apply font-md md:font-lg lg:font-xl xl:font-2xl
+    }
+
+    .btn-center{
+        @apply py-[8px] lg:py-[16px] w-full text-center border rounded-[10px] font-xl-responsive hover:opacity-90;
+    }
+
+    .first-heading{
+        @apply h4 sm:h3 md:h2 lg:h1
+    }
+    .seconds-heading{
+        @apply h5 sm:h4 md:h3 lg:h2
+    }
+    .third-heading{
+        @apply h6 sm:h5 md:h4 lg:h3
+    }
+
+    .hide-arrow{
+        -moz-appearance:textfield;
+    }
+
+    .pesanan-done{
+     @apply w-[73px] h-[73px] flex justify-center items-center font-lg  bg-primary rounded-full text-white font-bold flex-shrink-0
+    }
+
+    .pesanan-progress{ 
+        @apply w-[73px] h-[73px] flex justify-center items-center font-lg  border-2 border-primary rounded-full text-primary font-bold flex-shrink-0
+    }
+
+    .pesanan-pending{ 
+        @apply w-[73px] h-[73px] flex justify-center items-center font-lg border-2 border-gray-4 bg-gray-5 rounded-full  font-bold flex-shrink-0
+    }
+}
